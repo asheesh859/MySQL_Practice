@@ -52,6 +52,7 @@ insert into employees values(7, '1998-06-08', "Manish" , "Kumar" , 'M','2025-09-
 insert into employees values(8, '1999-07-09', "Devesh" , "Kashyap" , 'M','2025-02-2'); 
 insert into employees values(9, '2002-08-10', "Aneesh" , "Sharma" , 'M','2025-03-1'); 
 insert into employees values(10, '2001-08-03', "Ankush" , "Kumar" , 'M','2025-03-21'); 
+insert into employees values(11, '2000-08-04', "Vishal" , "Kumar" , 'M','2025-03-24'); 
 
 
 
