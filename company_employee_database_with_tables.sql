@@ -54,6 +54,44 @@ insert into employees values(9, '2002-08-10', "Aneesh" , "Sharma" , 'M','2025-03
 insert into employees values(10, '2001-08-03', "Ankush" , "Kumar" , 'M','2025-03-21'); 
 insert into employees values(11, '2000-08-04', "Vishal" , "Kumar" , 'M','2025-03-24'); 
 
+insert into salaries values (1,20000,'2014-04-24' , '2020-07-7');
+insert into salaries values (2,30000,'2015-04-24' , '2022-07-7');
+insert into salaries values (3,40000,'2012-05-24' , '2023-04-2');
+insert into salaries values (4,50000,'2011-05-28' , '2025-09-14');
+insert into salaries values (5,120000,'2015-06-24' , '2020-07-15');
+insert into salaries values (6,860000,'2016-07-24' , '2020-12-16');
+insert into salaries values (7,760000,'2017-08-24' , '2020-11-17');
+insert into salaries values (8,450000,'2012-09-24' , '2020-10-18');
+insert into salaries values (9,800000,'2011-10-24' , '2020-09-19');
+insert into salaries values (10,70000,'2014-11-24' , '2020-08-20');
+
+select * from salaries,employees where salaries.emp_no=employees.emp_no;
+
+insert into dept_manager values ('101',1,'2014-04-24' , '2020-07-7');
+insert into dept_manager values ('102',2,'2015-04-24' , '2022-07-7');
+insert into dept_manager values ('103',3,'2012-05-24' , '2023-04-2');
+insert into dept_manager values ('104',4,'2011-05-28' , '2025-09-14');
+insert into dept_manager values ('105',5,'2015-06-24' , '2020-07-15');
+insert into dept_manager values ('106',6,'2016-07-24' , '2020-12-16');
+insert into dept_manager values ('107',7,'2017-08-24' , '2020-11-17');
+insert into dept_manager values ('108',8,'2012-09-24' , '2020-10-18');
+insert into dept_manager values ('109',9,'2011-10-24' , '2020-09-19');
+insert into dept_manager values ('110',10,'2014-11-24' , '2020-08-20');
+
+insert into departments values ('101','Computer Science');
+insert into departments values ('102','Civil Depaertment');
+insert into departments values ('103','Engineering');
+insert into departments values ('104','Electrical');
+insert into departments values ('105','Artificial inteligence');
+insert into departments values ('106','Cloud computing');
+insert into departments values ('107','Human Resource');
+insert into departments values ('108','Accounts');
+insert into departments values ('109','Information Technology');
+insert into departments values('110','Maintainance');
+
+select * from dept_manager,departments,employees where dept_manager.dept_no=departments.dept_no AND employees.emp_no=dept_manager.emp_no;
+
+
 
 
 
