@@ -91,6 +91,18 @@ insert into departments values('110','Maintainance');
 
 select * from dept_manager,departments,employees where dept_manager.dept_no=departments.dept_no AND employees.emp_no=dept_manager.emp_no;
 
+insert into titles values (1,'Software Engineer','2014-04-24' , '2020-07-7');
+insert into titles values (2,'Manager','2015-04-24' , '2022-07-7');
+insert into titles values (3,'Database Administrator','2012-05-24' , '2023-04-2');
+insert into titles values (4,'Linux Admin','2011-05-28' , '2025-09-14');
+insert into titles values (5,'AIML Engineer','2015-06-24' , '2020-07-15');
+insert into titles values (6,'Account Manager','2016-07-24' , '2020-12-16');
+insert into titles values (7,'Electrical Engineer','2017-08-24' , '2020-11-17');
+insert into titles values (8,'Assistant Professor','2012-09-24' , '2020-10-18');
+insert into titles values (9,'Asociate ','2011-10-24' , '2020-09-19');
+insert into titles values (10,'Testing Head','2014-11-24' , '2020-08-20');
+select * from dept_manager;
+use company_employee
 
 
 
