@@ -29,5 +29,22 @@ select M_status from m_status where Eid in (select Eid from emp where city = 'Ba
 select Date from incentive where Eid in (select Eid from emp where Ename Like '%a');
 select Ename from emp where Eid not in (select Eid from incentive);
 
+select Ename from emp order by Ename Desc;
+select Ename from emp order by Ename Asc;
 
+select Max(salary) from emp;
+
+select avg(salary) from emp;
+select min(salary) from emp;
+
+select sum(salary) from emp;
+select count(Eid) from emp;
+select count(Eid) from emp group by city order by count(Eid) desc;
+select count(salary) from emp group by salary;
+select count(city) from emp group by city having city ='Banglore';
+select ucase(Ename) from emp;
+select lcase(Ename) from emp;
+
+select * from emp order by Eid asc limit 2;
+select * from emp order by Eid asc limit 1;
 
