@@ -47,4 +47,66 @@ select lcase(Ename) from emp;
 
 select * from emp order by Eid asc limit 2;
 select * from emp order by Eid asc limit 1;
+select * ,mid(city, 3) from emp;
+select now();
+select now() as time;
+
+select * from emp where Ename like '%e';
+select * from emp where Ename like 'M%';
+
+select * from emp where Ename like '___';
+
+select * from emp where Ename like '_____';
+
+select * from emp where Ename like '___m';
+delete from emp where Eid = 105;
+select * from emp;
+select  distinct salary from emp;
+select concat(Ename ," _", salary) from emp;
+
+select ltrim(Ename) from emp;
+
+select rtrim(city) from emp;
+select trim(city) from emp;
+select concat(trim(Ename),"_",trim(salary)) from emp;
+select concat(Ename , salary) from emp order by concat(Ename,salary) desc;
+select * from emp order by Ename asc;
+update emp set Ename = "Smith" where Ename ="alice";
+select * from emp;
+update emp set Ename="abc" where Ename="Smith";
+
+update emp set Eid=110 where Eid=101;
+update emp set city="Bengluru" where city = "Banglore";
+delete from emp where Ename ='abc';
+delete from emp where salary = 10000;
+update emp set salary = salary+2000;
+update emp set salary = salary-3000;
+
+alter table emp add email varchar(20);
+
+alter table emp drop email;
+
+alter table emp add email varchar(20) first;
+
+select length(Ename) from emp;
+
+select max(salary) from emp where salary<(select max(salary) from emp);
+
+select * from emp where Eid in (select Eid from incentive );
+select * from emp where Eid in (select Eid from m_status where M_status='No');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
